@@ -16,3 +16,20 @@ header ul {
 header .menu-toggle {
   display: none;
 }
+.menu-toggle {
+  display: none; /* Hidden by default */
+  width: 40px; /* Adjust size for mobile menu icon */
+  height: auto;
+}
+
+/* Show the menu toggle icon on smaller screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show when screen width is 768px or less */
+    cursor: pointer;
+  }
+
+  header ul {
+    display: none; /* Hide the regular menu on mobile */
+  }
+}
