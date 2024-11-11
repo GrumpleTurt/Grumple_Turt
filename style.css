@@ -42,7 +42,6 @@ header .logo-text span {
 }
 
 header ul {
-  float: right;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -50,7 +49,6 @@ header ul {
 }
 
 header ul li {
-  float: left;
   position: relative;
 }
 
