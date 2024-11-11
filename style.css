@@ -20,13 +20,14 @@ header * {
 header .logo {
   float: left;
   height: inherit;
+  margin-left: 2em;
   border: 1px solid red;
+}
+
+header .logo-text {
+  margin: 8px;
 }
 
 header ul {
   float: right;
-}
-
-header .menu-toggle {
-  display: none;
 }
