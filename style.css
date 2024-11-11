@@ -1,3 +1,7 @@
+* {
+box-sizing: border-box;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -15,8 +19,14 @@ header * {
 
 header .logo {
   float: left;
+  height: inherit;
+  border: 1px solid red;
 }
 
 header ul {
   float: right;
+}
+
+header .menu-toggle {
+  display: none;
 }
