@@ -47,13 +47,14 @@ header ul {
   padding: 0px;
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
 }
 
 header ul li {
   margin-left: 20px;
   position: relative;
+  height: 100%;
 }
 
 header ul li ul {
@@ -80,7 +81,8 @@ header ul li:hover ul {
 }
 
 header ul li ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
   width: 100%;
   color: #333333;
@@ -94,8 +96,9 @@ header ul li ul li a:hover {
 }
 
 header ul li a {
-  display: block;
-  padding: 21px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
   font-size: 1.1em;
   text-decoration: none;
   height: 100%;
