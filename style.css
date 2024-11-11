@@ -3,28 +3,47 @@ body {
   margin: 0px;
   background: #f6f6f6;
 }
+
 header {
   background: #333333;
   height: 100px;
 }
+
 header * {
   color: white;
 }
+
 header .logo {
   float: left;
 }
+
 header ul {
   float: right;
 }
+
 header .menu-toggle {
   display: none;
 }
+
 .menu-toggle {
   display: none; /* Hidden by default */
   width: 40px; /* Adjust size for mobile menu icon */
   height: auto;
 }
 
+header ul li ul {
+  display: none; /* Hide the nested list by default */
+  position: absolute;
+  background-color: #333; /* Change the background as needed */
+}
+
+header ul li:hover ul {
+  display: block; /* Show the nested list on hover */
+}
+
+header ul li ul li {
+  display: block;
+}
 /* Show the menu toggle icon on smaller screens */
 @media (max-width: 768px) {
   .menu-toggle {
