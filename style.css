@@ -7,3 +7,9 @@ header {
   background: #333333;
   height: 100px;
 }
+header .logo {
+  float: left;
+}
+header ul {
+  float: right;
+}
