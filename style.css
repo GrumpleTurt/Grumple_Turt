@@ -9,12 +9,13 @@ body {
   font-family: "goodchild-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 100%;
 }
 
 header {
   background: #333333;
   height: 66px;
+  display: flex;
+  width: 100%;
 }
 
 header * {
@@ -43,6 +44,7 @@ header ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  display: flex;
 }
 
 header ul li {
