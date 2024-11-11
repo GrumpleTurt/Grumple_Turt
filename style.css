@@ -7,6 +7,9 @@ header {
   background: #333333;
   height: 100px;
 }
+header * {
+  color: white;
+}
 header .logo {
   float: left;
 }
