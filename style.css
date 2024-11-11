@@ -73,6 +73,11 @@ header ul li ul {
 
 header ul li ul li {
   display: block;
+}
+
+header ul li:hover ul {
+  display: block;
+}
 
 header ul li ul li a {
   display: block;
