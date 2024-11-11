@@ -10,7 +10,7 @@ body {
 
 header {
   background: #333333;
-  height: 100px;
+  height: 66px;
 }
 
 header * {
@@ -21,11 +21,14 @@ header .logo {
   float: left;
   height: inherit;
   margin-left: 2em;
-  border: 1px solid red;
 }
 
 header .logo-text {
-  margin: 8px;
+  margin: 9px;
+}
+
+header .logo-text span {
+  color: #B2AC88;
 }
 
 header ul {
