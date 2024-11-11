@@ -58,7 +58,7 @@ header ul li {
 
 header ul li a {
   display: block;
-  padding: 21px 0;
+  padding: 21px;
   font-size: 1.1em;
   text-decoration: none;
   height: 100%;
