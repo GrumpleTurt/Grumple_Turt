@@ -48,6 +48,8 @@ header ul {
   list-style: none;
   display: flex;
   border: 1px solid red;
+  align-items: center;
+  height: 100%;
 }
 
 header ul li {
@@ -56,9 +58,10 @@ header ul li {
 
 header ul li a {
   display: block;
-  padding: 21px;
+  padding: 21px 0;
   font-size: 1.1em;
   text-decoration: none;
+  height: 100%;
 }
 
 header ul li a:hover {
