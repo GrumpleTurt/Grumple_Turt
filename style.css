@@ -42,11 +42,11 @@ header ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  border: 1px solid red;
 }
 
 header ul li {
   float: left;
+  position: relative;
 }
 
 header ul li a {
