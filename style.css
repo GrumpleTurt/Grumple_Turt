@@ -77,10 +77,6 @@ header ul li ul li {
   display: block;
 }
 
-header ul li ul li ul {
-  background-color: #333333;
-}
-
 header ul li:hover ul {
   display: block;
 }
@@ -89,6 +85,7 @@ header ul li ul li a {
   padding: block;
   text-decoration: none;
   white-space: nowrap;
+  background-color: #333333;
 }
 
 header ul li ul li a:hover {
