@@ -68,6 +68,23 @@ header ul li ul {
   width: 100%;
 }
 
+header ul li ul li {
+  display: block;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li a {
+  padding: block;
+  white-space: nowrap;
+}
+
+header ul li ul li a:hover {
+  background: #B2AC88;
+}
+
 header ul li a {
   display: block;
   padding: 21px;
