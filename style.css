@@ -9,11 +9,16 @@ body {
   font-family: "goodchild-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 header {
   background: #333333;
   height: 66px;
+  display: flex;
+  justify-content: space-between;
+  allign-items: center;
+  width: 100%;
   max-width: 100%;
 }
 
