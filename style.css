@@ -45,3 +45,40 @@ header ul {
 header .menu-toggle {
   display: none;
 }
+
+/* Navigation menu styles */
+header ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header ul.nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  /* Show menu icon and hide navigation for mobile */
+  header .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Hide the nav menu initially on mobile */
+  header ul.nav {
+    display: none;
+  }
+
+  /* Optionally: Add behavior to toggle the menu */
+  header .menu-toggle.active + ul.nav {
+    display: block; /* Show the menu when the icon is clicked */
+  }
