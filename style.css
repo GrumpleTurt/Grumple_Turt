@@ -41,7 +41,3 @@ header ul {
   float: right;
   border: 1px solid red;
 }
-
-header .menu-toggle {
-  display: none;
-}
