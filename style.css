@@ -54,6 +54,12 @@ header ul li a {
   padding: 21px;
   font-size: 1.1em;
   text-decoration: none;
+}
+
+header ul li a:hover {
+  background: 939799;
+  transition: 0.5s;
+}
 
 header .menu-toggle {
   display: none;
