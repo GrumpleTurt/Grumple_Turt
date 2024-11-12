@@ -147,7 +147,7 @@ header .menu-toggle {
     position: absolute;
     top: 66px;
     left: 0;
-    width: 200px;
+    width: 120px;
     background: #333333;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
