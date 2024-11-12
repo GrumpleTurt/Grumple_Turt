@@ -155,7 +155,13 @@ header .menu-toggle {
     display: block;
     height: 100%;
     line-height: 66px;
+    width:100%;
   }
+  
+header .nav li a:hover {
+  background: #B2AC88;  /* Ensure hover fills the width */
+  transition: 0.3s ease;  /* Optional: smooth transition */
+}
 
   /* Submenus for mobile view */
   header .nav li ul {
@@ -181,6 +187,7 @@ header .menu-toggle {
     background: #333333;
     text-align: center;
     display: block; /* Ensure submenu items take full width */
+    width: 100%;
   }
 
   /* Position submenu to the right of the menu in mobile */
