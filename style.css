@@ -197,5 +197,6 @@ header .menu-toggle {
     text-align: left;
     display: block;
     width: 100%;
+    align-items: center;
   }
 }
