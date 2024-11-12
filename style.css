@@ -6,10 +6,23 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   background: #f6f6f6;
   font-family: "goodchild-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#content-display {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px); /* Adjust based on your header's height */
+}
+
+#iframe-display {
+  width: 100%;
+  flex-grow: 1; /* Allow iframe to expand and take up remaining space */
+  border: none;
 }
 
 header {
