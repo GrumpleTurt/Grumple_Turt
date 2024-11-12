@@ -113,4 +113,19 @@ header .menu-toggle {
   display: none;
 }
 
+@media (max-width: 768px) {
+  /* Hide the navigation menu */
+  header .nav {
+    display: none;
+  }
+
+  /* Show the hamburger icon */
+  header .menu-toggle {
+    display: block;
+    cursor: pointer;
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+  }
+}
+
 
