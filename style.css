@@ -179,7 +179,7 @@ header .menu-toggle {
     position: absolute;
     top: 0;
     left: 100%;
-    min-width: 150px;
+    min-width: 120px;
   }
 
   /* Show submenu when it has the submenu-active class */
