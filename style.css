@@ -128,6 +128,19 @@ header .menu-toggle {
   }
 }
 @media (max-width: 768px) {
+  /* Hide the navigation menu by default */
+  header .nav {
+    display: none;
+  }
+
+  /* Show the hamburger icon */
+  header .menu-toggle {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
   /* Display the menu when active */
   header .nav.active {
     display: flex;
@@ -146,50 +159,32 @@ header .menu-toggle {
     font-size: 1.2em;
     text-align: center;
   }
-/* Hide submenus by default */
-header .nav li ul {
-  display: none; /* Hide submenus by default */
-  max-height: 0; /* Initially, the submenu is collapsed */
-  overflow: hidden; /* Prevent overflow of hidden content */
-  transition: max-height 0.3s ease-out; /* Smooth transition for expanding submenu */
-  background: #333333;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-/* Show submenu when active */
-header .nav li ul.submenu-active {
-  display: block; /* Make submenu visible */
-  max-height: 500px; /* Allow enough height for all submenu items */
-}
+  /* Submenus for mobile view */
+  header .nav li ul {
+    display: none; /* Hide submenus by default */
+    flex-direction: column; /* Stack submenu items vertically */
+    padding: 0;
+    margin: 0;
+    background: #333333;
+    list-style: none;
+    width: 100%;
+  }
 
-/* Style submenu items */
-header .nav li ul li a {
-  padding: 10px;
-  font-size: 1em;
-  color: white;
-  background: #333333;
-  text-align: center;
-  display: block; /* Make sure the submenu items take full width */
-}
+  /* Show submenu when it has the submenu-active class */
+  header .nav li ul.submenu-active {
+    display: flex; /* Make submenu visible */
+  }
 
-header .nav li ul li a {
-  padding: 10px;
-  font-size: 1em;
-}
-  /* Smooth transition for the mobile menu */
-header .nav {
-  transition: max-height 0.3s ease-out;
-  overflow: hidden;
-  max-height: 0; /* Default to hidden */
-}
-
-header .nav.active {
-  max-height: 500px; /* Enough to fit the full menu */
-}
-
+  /* Style submenu items */
+  header .nav li ul li a {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background: #333333;
+    text-align: center;
+    display: block; /* Ensure submenu items take full width */
+  }
 }
 
 
