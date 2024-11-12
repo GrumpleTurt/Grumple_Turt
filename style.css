@@ -148,15 +148,21 @@ header .menu-toggle {
   }
 /* Submenu setup */
 header .nav li ul {
-  display: none; /* Hide by default */
-  position: relative; /* Position submenu items directly under each main menu item */
-  background: #333333;
+  display: none; /* Hide submenus by default */
+  position: absolute;
+  top: 100%; /* Position directly below the parent */
+  left: 0;
+  right: 0;
   width: 100%;
+  background: #333333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Make submenu fully visible when submenu-active class is added */
+/* Show submenu when active */
 header .nav li ul.submenu-active {
-  display: block;
+  display: block; /* Display submenu when the submenu-active class is added */
 }
 
 /* Adjust submenu item appearance */
@@ -166,7 +172,9 @@ header .nav li ul li a {
   color: white;
   text-align: center;
   background: #333333;
+  display: block; /* Ensure full-width for each item */
 }
+
 
 header .nav li ul li a {
   padding: 10px;
