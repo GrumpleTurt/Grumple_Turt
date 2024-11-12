@@ -30,7 +30,7 @@
       </li>
     </ul>
   </header>
-  <script>
+ <script>
   // Select the menu toggle button and the navigation menu
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav");
@@ -45,12 +45,12 @@
 
   submenuParents.forEach((parent) => {
     const submenu = parent.querySelector("ul");
-    if (submenu) {
+    const link = parent.querySelector("a");
+
+    if (submenu && link && link.textContent.trim() === "Books") {
       parent.addEventListener("click", (event) => {
         event.stopPropagation(); // Prevent clicks from bubbling up
-        if (parent.querySelector("a").textContent === "Books") {
-          submenu.classList.toggle("submenu-active");
-        }
+        submenu.classList.toggle("submenu-active"); // Toggle the submenu visibility
       });
     }
   });
