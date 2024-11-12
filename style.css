@@ -114,7 +114,7 @@ header .menu-toggle {
 }
 
 @media (max-width: 768px) {
-  /* Hide the navigation menu */
+  /* Hide the navigation menu by default */
   header .nav {
     display: none;
   }
@@ -127,14 +127,15 @@ header .menu-toggle {
     height: 30px;
   }
 
-  /* Display the menu when active */
+  /* Position the menu fixed on the right side */
   header .nav.active {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 66px; /* Position it below the header */
-    left: 0;
-    max-width: 250px; /* Limit the width of the mobile menu */
+    position: fixed; /* Fix the menu to the right */
+    top: 0; /* Keep it at the top */
+    right: 0; /* Align it to the right side */
+    height: 100%; /* Full height of the viewport */
+    width: 250px; /* Fixed width of the menu */
     background: #333333;
     z-index: 1000;
     border-radius: 5px;
@@ -145,8 +146,9 @@ header .menu-toggle {
   header .nav li a {
     padding: 15px;
     font-size: 1.2em;
-    text-align: center;
+    text-align: left; /* Align the text to the left */
     border-bottom: 1px solid #444;
+    height: 50px; /* Ensure the menu items have a static height */
   }
 
   /* Submenus for mobile view */
@@ -171,11 +173,12 @@ header .menu-toggle {
     font-size: 1em;
     color: white;
     background: #333333;
-    text-align: center;
-    display: block; /* Ensure submenu items take full width */
+    text-align: left; /* Align text to the left */
+    display: block;
+    width: 100%;
   }
 
-  /* Position submenu to the right of the menu in mobile */
+  /* Position submenu to the left of the parent item */
   header .nav li ul {
     position: absolute;
     top: 0;
