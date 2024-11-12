@@ -35,6 +35,7 @@
     <iframe id="iframe-display"></iframe>
   </div>
  <script>
+   <script>
    // Function to load the HTML file into the iframe
     const loadHTMLInIframe = (fileName) => {
       const iframe = document.getElementById("iframe-display");
@@ -47,34 +48,40 @@
       loadHTMLInIframe("Meditations.html"); // Load the Meditations.html file in the iframe
     });
 
+    // Add event listener for the "Fragments" menu item
+    document.getElementById("fragments-menu").addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      loadHTMLInIframe("Fragments.html"); // Load the Fragments.html file in the iframe
+    });
+
     // Optionally, add more event listeners for other menu items if you need them
-    // Example for the "Texts" menu (if you want it to show something specific)
     document.getElementById("texts-menu").addEventListener("click", (event) => {
       event.preventDefault();
-      loadHTMLInIframe("Texts.html"); // You can change this to any file you need
+      loadHTMLInIframe("Texts.html");
     });
    
- // Select the menu toggle button and the navigation menu
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav");
+    // Select the menu toggle button and the navigation menu
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav");
 
-// Add a click event to the toggle button for the hamburger menu
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+    // Add a click event to the toggle button for the hamburger menu
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
 
-// Select the "Books" menu item
-const booksItem = document.querySelector("header .nav > li"); // Assuming the "Books" menu is the first li
+    // Select the "Books" menu item
+    const booksItem = document.querySelector("header .nav > li");
 
-if (booksItem) {
-  const submenu = booksItem.querySelector("ul");
+    if (booksItem) {
+      const submenu = booksItem.querySelector("ul");
 
-  // Ensure submenu toggles when clicking on the "Books" menu item
-  booksItem.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent clicks from bubbling up
-    booksItem.classList.toggle("submenu-active"); // Toggle the submenu visibility
-  });
-}
+      // Ensure submenu toggles when clicking on the "Books" menu item
+      booksItem.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevent clicks from bubbling up
+        booksItem.classList.toggle("submenu-active"); // Toggle the submenu visibility
+      });
+    }
+</script>
 </script>
 </body>
 
