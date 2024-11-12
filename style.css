@@ -146,35 +146,31 @@ header .menu-toggle {
     font-size: 1.2em;
     text-align: center;
   }
-/* Submenu setup */
+/* Submenu setup for mobile view */
 header .nav li ul {
   display: none; /* Hide submenus by default */
-  position: absolute;
-  top: 100%; /* Position directly below the parent */
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #333333;
-  list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%; /* Ensure the submenu takes full width */
+  background: #333333;
+  list-style: none;
+  flex-direction: column; /* Stack submenu items vertically */
 }
 
 /* Show submenu when active */
 header .nav li ul.submenu-active {
-  display: block; /* Display submenu when the submenu-active class is added */
+  display: flex; /* Use flex to align submenu items vertically */
 }
 
-/* Adjust submenu item appearance */
+/* Style submenu items */
 header .nav li ul li a {
   padding: 10px;
   font-size: 1em;
   color: white;
   text-align: center;
   background: #333333;
-  display: block; /* Ensure full-width for each item */
+  display: block; /* Ensure full width for each item */
 }
-
 
 header .nav li ul li a {
   padding: 10px;
