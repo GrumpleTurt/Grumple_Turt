@@ -35,33 +35,24 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav");
 
-  // Add a click event to the toggle button
+  // Add a click event to the toggle button for the hamburger menu
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
   });
-</script>
-<script>
-  // Select all list items with a submenu
+
+  // Select all list items with a submenu under the "Books" menu
   const submenuParents = document.querySelectorAll("header .nav > li");
 
   submenuParents.forEach((parent) => {
-    // Check if the item has a submenu
     const submenu = parent.querySelector("ul");
     if (submenu) {
-      // Add a click event to toggle the submenu
       parent.addEventListener("click", (event) => {
         event.stopPropagation(); // Prevent clicks from bubbling up
-        submenu.classList.toggle("submenu-active");
+        if (parent.querySelector("a").textContent === "Books") {
+          submenu.classList.toggle("submenu-active");
+        }
       });
     }
-  });
-
-  // Hamburger menu toggle
-  const menuToggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav");
-
-  menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
   });
 </script>
 </body>
