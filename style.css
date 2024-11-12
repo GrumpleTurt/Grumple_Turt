@@ -11,6 +11,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+/* Style that first letter! */
+.subhead::first-letter {
+  initial-letter: 3;
+}
 
 #content-display {
   height: 100vh;
