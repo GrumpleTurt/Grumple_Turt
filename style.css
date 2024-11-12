@@ -52,7 +52,6 @@ header ul {
 }
 
 header ul li {
-  margin-left: 20px;
   position: relative;
   height: 100%;
   display: flex;
