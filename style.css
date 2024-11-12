@@ -146,6 +146,22 @@ header .menu-toggle {
     font-size: 1.2em;
     text-align: center;
   }
+  /* Display the submenu when active */
+header .nav li ul.submenu-active {
+  display: block;
+}
+
+/* Adjust the submenu's appearance */
+header .nav li ul {
+  position: static; /* Reset from absolute positioning */
+  background: #333333;
+  width: 100%;
+}
+
+header .nav li ul li a {
+  padding: 10px;
+  font-size: 1em;
+}
 }
 
 
