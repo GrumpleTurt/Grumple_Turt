@@ -13,8 +13,12 @@ body {
 }
 /* Style that first letter! */
 .subhead::first-letter {
-  initial-letter: 3;
-}
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 3;
+  }
 
 #content-display {
   height: 100vh;
