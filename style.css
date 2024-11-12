@@ -162,6 +162,17 @@ header .nav li ul li a {
   padding: 10px;
   font-size: 1em;
 }
+  /* Smooth transition for the mobile menu */
+header .nav {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0; /* Default to hidden */
+}
+
+header .nav.active {
+  max-height: 500px; /* Enough to fit the full menu */
+}
+
 }
 
 
