@@ -113,3 +113,23 @@ header ul li a:hover {
 header .menu-toggle {
   display: none;
 }
+
+@media only screen and (max-width: 750px) {
+  header ul {
+    width: 100%;
+    background: #333333;
+  }
+  header ul li {
+    width: 100%;
+  }
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+  header ul li ul li a {
+    padding: 10px;
+    background: #B2AC88;
+    color: #333333
+  }
+}
