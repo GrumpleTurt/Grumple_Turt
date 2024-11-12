@@ -1,10 +1,10 @@
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background: #f6f6f6;
   font-family: "goodchild-pro", sans-serif;
   font-weight: 400;
@@ -32,7 +32,7 @@ header .logo {
 }
 
 header .logo-text {
-  margin: 0px;
+  margin: 0;
   font-family: "goodchild-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -43,8 +43,8 @@ header .logo-text span {
 }
 
 header ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   align-items: stretch;
@@ -123,20 +123,6 @@ header .menu-toggle {
   header .menu-toggle {
     display: block;
     cursor: pointer;
-    width: 30px; /* Adjust size as needed */
-    height: 30px;
-  }
-}
-@media (max-width: 768px) {
-  /* Hide the navigation menu by default */
-  header .nav {
-    display: none;
-  }
-
-  /* Show the hamburger icon */
-  header .menu-toggle {
-    display: block;
-    cursor: pointer;
     width: 30px;
     height: 30px;
   }
@@ -151,8 +137,8 @@ header .menu-toggle {
     max-width: 250px; /* Limit the width of the mobile menu */
     background: #333333;
     z-index: 1000;
-    border-radius: 5px; /* Optional: Rounded corners for the menu */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better contrast */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
 
   /* Style each menu item for mobile view */
@@ -160,7 +146,7 @@ header .menu-toggle {
     padding: 15px;
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 1px solid #444; /* Optional: Adds a small separator between items */
+    border-bottom: 1px solid #444;
   }
 
   /* Submenus for mobile view */
@@ -188,8 +174,17 @@ header .menu-toggle {
     text-align: center;
     display: block; /* Ensure submenu items take full width */
   }
+
+  /* Position submenu to the right of the menu in mobile */
+  header .nav li ul {
+    position: absolute;
+    top: 0;
+    right: 100%; /* Position it to the left of the parent item */
+    min-width: 150px;
+  }
+
+  /* Optional: Add transition for submenu visibility */
+  header .nav li ul.submenu-active {
+    transition: all 0.3s ease;
+  }
 }
-
-}
-
-
