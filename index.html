@@ -25,7 +25,7 @@
         <ul> 
           <li><a href="#" id="meditations-menu">Meditations</a></li>
           <li><a href="#" id="fragments-menu">Fragments</a></li>
-          <li><a href="#">Enchiridion</a></li>
+          <li><a href="#" id="enchiridion-menu">Enchiridion</a></li>
         </ul>
       </li>
     </ul>
@@ -51,6 +51,12 @@
     document.getElementById("fragments-menu").addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
       loadHTMLInIframe("Fragments.html"); // Load the Fragments.html file in the iframe
+    });
+
+   // Event listener for the "Fragments" menu item
+    document.getElementById("enchiridion-menu").addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      loadHTMLInIframe("Enchiridion.html"); // Load the Fragments.html file in the iframe
     });
    
  // Select the menu toggle button and the navigation menu
