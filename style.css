@@ -146,16 +146,21 @@ header .menu-toggle {
     font-size: 1.2em;
     text-align: center;
   }
-  /* Display the submenu when active */
-header .nav li ul.submenu-active {
-  display: block;
-}
-
-/* Adjust the submenu's appearance */
+/* Adjust the submenu's appearance for mobile view */
 header .nav li ul {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
   position: static; /* Reset from absolute positioning */
   background: #333333;
   width: 100%;
+}
+
+/* Display the submenu fully when active */
+header .nav li ul.submenu-active {
+  display: block;
+  max-height: 500px; /* Allow enough height for all submenu items */
 }
 
 header .nav li ul li a {
