@@ -127,5 +127,25 @@ header .menu-toggle {
     height: 30px;
   }
 }
+@media (max-width: 768px) {
+  /* Display the menu when active */
+  header .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 66px; /* Position it below the header */
+    left: 0;
+    width: 100%;
+    background: #333333;
+    z-index: 1000;
+  }
+
+  /* Style each menu item for mobile view */
+  header .nav li a {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
 
 
