@@ -12,6 +12,18 @@ body {
   font-style: normal;
 }
 
+#content-display {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px); /* Adjust based on your header's height */
+}
+
+#iframe-display {
+  width: 100%;
+  flex-grow: 1; /* Allow iframe to expand and take up remaining space */
+  border: none;
+}
+
 header {
   background: #333333;
   height: 66px;
