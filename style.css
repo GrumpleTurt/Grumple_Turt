@@ -13,14 +13,14 @@ body {
 }
 
 #content-display {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 100px); /* Adjust based on your header's height */
+  height: 100vh; /* This will make the container fill the entire viewport height */
+  margin: 0;
+  padding: 0;
 }
 
 #iframe-display {
   width: 100%;
-  flex-grow: 1; /* Allow iframe to expand and take up remaining space */
+  height: 100%; /* Make iframe fill the entire height of the container */
   border: none;
 }
 
