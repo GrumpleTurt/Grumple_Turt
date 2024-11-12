@@ -18,19 +18,42 @@
     <ul class="nav">
       <li><a href="#">Home</a></li>
       <li><a href="#">Feed</a></li>
-      <li><a href="#">Texts</a></li>
+      <li><a href="#" id="texts-menu">Texts</a></li>
       <li><a href="#">Journal</a></li>
       <li>
-          <a href="#">Books</a>
-          <ul> 
-            <li><a href="https://GrumpleTurt.github.io/Grumple_Turt/Meditations.html" target="_blank">Meditations</a></li>
-            <li><a href="#">Fragments</a></li>
-            <li><a href="#">Encridion</a></li>
-          </ul>
+        <a href="#">Books</a>
+        <ul> 
+          <li><a href="#" id="meditations-menu">Meditations</a></li>
+          <li><a href="#">Fragments</a></li>
+          <li><a href="#">Enchiridion</a></li>
+        </ul>
       </li>
     </ul>
   </header>
+  <div id="content-display">
+    <!-- iframe will display the Meditations.html content here -->
+    <iframe id="iframe-display" style="width:100%; height:600px; border:none;"></iframe>
+  </div>
  <script>
+   // Function to load the HTML file into the iframe
+    const loadHTMLInIframe = (fileName) => {
+      const iframe = document.getElementById("iframe-display");
+      iframe.src = `https://GrumpleTurt.github.io/Grumple_Turt/${fileName}`;
+    };
+
+    // Add event listeners to the menu items
+    document.getElementById("meditations-menu").addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default anchor click behavior
+      loadHTMLInIframe("Meditations.html"); // Load the Meditations.html file in the iframe
+    });
+
+    // Optionally, add more event listeners for other menu items if you need them
+    // Example for the "Texts" menu (if you want it to show something specific)
+    document.getElementById("texts-menu").addEventListener("click", (event) => {
+      event.preventDefault();
+      loadHTMLInIframe("Texts.html"); // You can change this to any file you need
+    });
+   
  // Select the menu toggle button and the navigation menu
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav");
