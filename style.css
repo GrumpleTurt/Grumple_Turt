@@ -140,11 +140,20 @@ header .menu-toggle {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
 
+  header .nav li {
+    height: 66px;
+    display: flex;
+    align-items: center;
+  }
+  
   /* Style each menu item for mobile view */
   header .nav li a {
-    padding: 15px;
+    padding: 0 15px;
     font-size: 1em;
     text-align: center;
+    display: block;
+    height: 100%;
+    line-height: 66px;
   }
 
   /* Submenus for mobile view */
