@@ -40,7 +40,21 @@
     navMenu.classList.toggle("active");
   });
 </script>
+<script>
+  // Select all list items with a submenu
+  const submenuParents = document.querySelectorAll("header .nav > li");
 
+  submenuParents.forEach((parent) => {
+    // Check if the item has a submenu
+    const submenu = parent.querySelector("ul");
+    if (submenu) {
+      // Add a click event to toggle the submenu
+      parent.addEventListener("click", () => {
+        submenu.classList.toggle("submenu-active");
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
