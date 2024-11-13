@@ -13,25 +13,61 @@
       margin-right: 0.1em;
       line-height: 1;
     }
+    nav ul {
+      display: none;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    nav ul.show {
+      display: block;
+    }
+    nav {
+      margin-bottom: 1em;
+    }
+    nav button {
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+    }
     </style>
+    <script>
+    function toggleNav() {
+      const navList = document.querySelector("nav ul");
+      navList.classList.toggle("show");
+    }
+    </script>
 </head>
 <body>
 
 <div class="document">
 <h1>Meditations | Marcus Aurelius</h1>
 <nav>
+  <button onclick="toggleNav()">Table of Contents</button>
   <ul>
     <li><a href="#book1">Book 1 | Debts and Lessons</a></li>
     <li><a href="#book2">Book 2 | On the River Gran, Among the Quadi</a></li>
+    <!-- Add more links here as needed -->
   </ul>
 </nav>
 <hr>
-</header>
 
-<!-- Content Sections -->
 <section id="book1">
-<h4>Book 1 Debts and Lessons</h4>
+    <h2>Book 1 | Debts and Lessons</h2>
+    <p class="subhead">From my grandfather Verus I learned good morals and the government of my temper.</p>
+    <!-- More content goes here -->
 </section>
+
+<section id="book2">
+    <h2>Book 2 | On the River Gran, Among the Quadi</h2>
+    <p class="subhead">Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful...</p>
+    <!-- More content goes here -->
+</section>
+
+</div>
 
 <section>
 <p class="subhead">My Grandfather Verus</p> 
