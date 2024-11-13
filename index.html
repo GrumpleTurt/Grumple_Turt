@@ -38,25 +38,25 @@
    // Function to load the HTML file into the iframe
     const loadHTMLInIframe = (fileName) => {
       const iframe = document.getElementById("iframe-display");
-      iframe.src = `https://GrumpleTurt.github.io/Grumple_Turt/${fileName}`;
+      iframe.src = `https://GrumpleTurt.github.io/Grumple_Turt/ARTICLE/${fileName}`;
     };
 
     // Add event listeners to the menu items
     document.getElementById("meditations-menu").addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor click behavior
-      loadHTMLInIframe("ARTICLE/Meditations.html"); // Load the Meditations.html file in the iframe
+      loadHTMLInIframe("Meditations.html"); // Load the Meditations.html file in the iframe
     });
    
     // Event listener for the "Fragments" menu item
     document.getElementById("fragments-menu").addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
-      loadHTMLInIframe("ARTICLE/Fragments.html"); // Load the Fragments.html file in the iframe
+      loadHTMLInIframe("Fragments.html"); // Load the Fragments.html file in the iframe
     });
 
    // Event listener for the "Fragments" menu item
     document.getElementById("enchiridion-menu").addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
-      loadHTMLInIframe("ARTICLE/Enchiridion.html"); // Load the Fragments.html file in the iframe
+      loadHTMLInIframe("Enchiridion.html"); // Load the Fragments.html file in the iframe
     });
    
  // Select the menu toggle button and the navigation menu
