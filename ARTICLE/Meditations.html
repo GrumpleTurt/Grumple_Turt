@@ -8,21 +8,25 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="container">
-        <h1>Meditations | Marcus Aurelius</h1>
-        <nav>
-            <ul>
-                <li><a href="#book1">Book 1</a></li>
-                <li><a href="#book2">Book 2</a></li>
-                <!-- Additional nav items for more books -->
-            </ul>
-        </nav>
+<div class="wrapper">
+    <!-- Sidebar (Table of Contents) -->
+    <div class="sidebar" id="toc">
+        <div class="toc-header">
+            <h2>Table of Contents</h2>
+            <button id="toggleButton">☰</button>
+        </div>
+        <ul>
+            <li><a href="#book1">Book 1 | Debts and Lessons</a></li>
+            <li><a href="#book2">Book 2 | On the River Gran, Among the Quadi</a></li>
+            <!-- Add more TOC items here as needed -->
+        </ul>
     </div>
-</header>
+
+    <!-- Main content (Document) -->
+    <div class="content">
+        <h1>Meditations | Marcus Aurelius</h1>
     
-<main class="document container">
-    <section id="book1">
+<section id="book1">
 <h2>Book 1 | Debts and Lessons</h2>
     
 <p><strong>1.1 My Grandfather Verus</strong>Character and self-control.</p>
@@ -82,7 +86,17 @@ And to help others and be eager to share, not to be a pessimist, and never to do
         <p>Begin the morning by saying to thyself...</p>
         <!-- More content -->
     </section>
-</main>
-    
+ </div>
+</div>
+
+<script>
+    // Toggle the visibility of the sidebar (TOC)
+    const toggleButton = document.getElementById('toggleButton');
+    const toc = document.getElementById('toc');
+
+    toggleButton.addEventListener('click', function() {
+        toc.classList.toggle('collapsed');
+    });
+</script>   
 </body>
 </html>
